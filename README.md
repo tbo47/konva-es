@@ -11,6 +11,13 @@
 
 You want this package if your project is [react](https://react.dev/), [vuejs](https://vuejs.org/), [angular](https://angular.dev/), etc...
 
+Imports need to be update to `konva-es`. Ex:
+```javascript
+import { Layer } from 'konva-es/lib/Layer'
+import { KonvaEventObject } from 'konva-es/lib/Node'
+import { Shape } from 'konva-es/lib/Shape'
+```
+
 ## Test locally
 
 Install: `npm install -g typescript`
