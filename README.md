@@ -14,8 +14,11 @@ You want this package if your project is [react](https://react.dev/), [vuejs](ht
 Imports need to be update to `konva-es`. Ex:
 ```javascript
 import { Layer } from 'konva-es/lib/Layer'
-import { KonvaEventObject } from 'konva-es/lib/Node'
 import { Shape } from 'konva-es/lib/Shape'
+import { Stage } from 'konva-es/lib/Stage'
+import { Circle } from 'konva-es/lib/shapes/Circle'
+import { Line } from 'konva-es/lib/shapes/Line'
+import { Rect } from 'konva-es/lib/shapes/Rect'
 ```
 
 ## Test locally
