@@ -5,9 +5,11 @@
 
 # Konva-es
 
-[Konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) compiled for esnext instead of commonjs.
+[konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) at esm format.
 
-[Konva-es on npmjs](https://www.npmjs.com/package/konva-es)
+Install: `npm install konva-es`
+
+[konva-es on npmjs](https://www.npmjs.com/package/konva-es)
 
 You want this package if your project is [react](https://react.dev/), [vuejs](https://vuejs.org/), [angular](https://angular.dev/), etc...
 
@@ -29,4 +31,4 @@ Run: `./build-esm.sh`
 
 It download and compile the konva. And does `npm link` for you.
 
-`npm link konva` in your project to import it.
+`npm link konva-es` in your project to import it.
