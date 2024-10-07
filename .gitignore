@@ -1,2 +1,4 @@
 dist
 konva
+package-lock.json
+node_modules
