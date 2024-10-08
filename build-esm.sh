@@ -23,8 +23,6 @@ sed -i '' '30,31d' src/Global.ts
 sed -i '' '30s/://' src/Global.ts
 # https://github.com/konvajs/konva/pull/1828/files
 sed -i '' 's/\]\.isDragging/\]\?.isDragging/g' src/Global.ts
-# https://github.com/konvajs/konva/pull/1827
-sed -i '' 's/ES2015/ES2019/g' tsconfig.json
 sed -i '' 's/CommonJS/ESNext/g' tsconfig.json
 tsc --removeComments
 cp -r lib ../dist/lib
