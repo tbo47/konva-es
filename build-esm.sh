@@ -21,6 +21,7 @@ git checkout .
 rm src/index-node.ts 
 sed -i '' '30,31d' src/Global.ts
 sed -i '' '30s/://' src/Global.ts
+# it's strange, sometimes it's not usefull to do the following
 # https://github.com/konvajs/konva/pull/1828/files
 sed -i '' 's/\]\.isDragging/\]\?.isDragging/g' src/Global.ts
 sed -i '' 's/CommonJS/ESNext/g' tsconfig.json
