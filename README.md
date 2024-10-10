@@ -21,12 +21,16 @@ import { Rect } from "konva-es/lib/shapes/Rect";
 
 ## Test locally
 
-Install: `npm install -g typescript`
+Clone konva: `git clone git@github.com:konvajs/konva.git` (your forked version would be better)
 
-Clone this repo and run: `./build-esm.sh`
+Clone this repo: `git clone git@github.com:tbo47/konva-es.git`
 
-It downloads and transpiles konva to esm format. And does `npm link` for you.
+`konva` and `konva-es` need to be in the same folder for the script to work.
 
-`npm link konva-es` in your project to import it.
+`cd konva-es ; ./build-esm.sh`
+
+It transpiles konva to esm format. And does `npm link` for you.
+
+`npm link konva-es` in your project to use it.
 
 Note: tested on macos with nodejs 20

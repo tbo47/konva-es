@@ -1,22 +1,8 @@
 set -e
-#
-# make sure: npm install -g typescript
-#
 rm -rf dist
 mkdir dist
-
-KONVA_DIR="konva"
-
-# Check if konva repo is empty and clone if it is
-if [ -d "$KONVA_DIR" ]; then
-    cd $KONVA_DIR
-    git pull
-    cd ..
-else
-  git clone git@github.com:tbo47/konva.git
-fi
-
-cd $KONVA_DIR
+npm install
+cd ../konva
 git checkout .
 rm src/index-node.ts 
 sed -i '' '30,31d' src/Global.ts
@@ -25,11 +11,16 @@ sed -i '' '30s/://' src/Global.ts
 # https://github.com/konvajs/konva/pull/1828/files
 sed -i '' 's/\]\.isDragging/\]\?.isDragging/g' src/Global.ts
 sed -i '' 's/CommonJS/ESNext/g' tsconfig.json
-tsc --removeComments
-cp -r lib ../dist/lib
+npx tsc --removeComments
 git checkout .
-cd ..
+cd ../konva-es
 cp package.json dist/package.json
 cp README.md dist/README.md
+KONVA_ABS_PATH=$(cd ../konva && pwd)
+KONVA_ES_ABS_PATH=$(pwd)
+# ln -s $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
+cp -r $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
 cd dist
 npm link
+npm publish --dry-run
+cd ..
