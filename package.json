@@ -8,7 +8,8 @@
     "url": "git+https://github.com/tbo47/konva-es.git"
   },
   "scripts": {
-    "build": "echo build; chmod +x build-esm.sh; ./build-esm.sh ; ./build-esm-bundle.sh",
+    "build": "echo build; chmod +x build-esm.sh; ./build-esm.sh",
+    "build_bundle": "./build-esm-bundle.sh",
     "my_1_npm_login": "npm login",
     "my_2_publish": "echo update_package_version ; ./build-esm.sh ; npm publish"
   },
