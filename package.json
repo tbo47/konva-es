@@ -1,6 +1,6 @@
 {
   "name": "konva-es",
-  "version": "9.3.19",
+  "version": "9.3.20",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "repository": {

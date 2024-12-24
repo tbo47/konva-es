@@ -22,6 +22,6 @@ KONVA_ES_ABS_PATH=$(pwd)
 # ln -s $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
 cp -r $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
 cd dist
-npm link
+# npm link
 npm publish --dry-run
 cd ..
