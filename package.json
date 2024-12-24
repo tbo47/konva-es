@@ -1,6 +1,6 @@
 {
   "name": "konva-es",
-  "version": "9.3.16",
+  "version": "9.3.18",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "repository": {
@@ -8,13 +8,13 @@
     "url": "git+https://github.com/tbo47/konva-es.git"
   },
   "scripts": {
-    "build": "echo build; chmod +x build-esm.sh; ./build-esm.sh",
+    "build": "echo build; chmod +x build-esm.sh; ./build-esm.sh ; ./build-esm-bundle.sh",
     "my_1_npm_login": "npm login",
     "my_2_publish": "echo update_package_version ; ./build-esm.sh ; npm publish"
   },
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.24.0",
-    "typescript": "^5.6.3"
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2"
   }
 }
