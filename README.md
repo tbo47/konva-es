@@ -1,5 +1,7 @@
 [konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) at esm format.
 
+ES2015 module is more efficient than other formats and can facilitate the creation of smaller bundle size through tree-shaking technique.
+
 [![NPM package](https://img.shields.io/npm/dw/konva-es.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen)](https://www.npmjs.com/package/konva-es)
 
 `npm i konva-es`

@@ -19,9 +19,8 @@ cp package.json dist/package.json
 cp README.md dist/README.md
 KONVA_ABS_PATH=$(cd ../konva && pwd)
 KONVA_ES_ABS_PATH=$(pwd)
-# ln -s $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
-cp -r $KONVA_ABS_PATH/lib $KONVA_ES_ABS_PATH/dist/
+mv $KONVA_ABS_PATH/lib/* $KONVA_ES_ABS_PATH/dist
+cp -r $KONVA_ES_ABS_PATH/dist/* ../es-front/node_modules/konva-es/lib/
 cd dist
-# npm link
 npm publish --dry-run
 cd ..
