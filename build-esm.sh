@@ -20,6 +20,8 @@ cp README.md dist/README.md
 KONVA_ABS_PATH=$(cd ../konva && pwd)
 KONVA_ES_ABS_PATH=$(pwd)
 mv $KONVA_ABS_PATH/lib/* $KONVA_ES_ABS_PATH/dist
+rm -rf ../es-front/node_modules/konva-es/lib
+mkdir ../es-front/node_modules/konva-es/lib
 cp -r $KONVA_ES_ABS_PATH/dist/* ../es-front/node_modules/konva-es/lib/
 cd dist
 npm publish --dry-run
