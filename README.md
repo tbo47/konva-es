@@ -21,6 +21,8 @@ import { Rect } from "konva-es/lib/shapes/Rect";
 
 [Demo](https://tbo47.github.io/konva-esm_example1/) and [code](https://github.com/tbo47/tbo47.github.io/blob/main/konva-esm_example1/index.js).
 
+[Demo 2](https://jsfiddle.net/zd4u7wy6/)
+
 ## Test locally
 
 Clone konva: `git clone git@github.com:konvajs/konva.git` (your forked version would be better)
