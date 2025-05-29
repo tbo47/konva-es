@@ -11,8 +11,6 @@ ES2015 module is more efficient than other formats and can facilitate the creati
 
 `npm i konva-es`
 
-You want this package if your project is [react](https://react.dev/), [vuejs](https://vuejs.org/), [angular](https://angular.dev/), etc...
-
 Imports need to be update to `konva-es`. Ex:
 
 ```javascript
