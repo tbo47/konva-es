@@ -2,7 +2,12 @@
 
 ES2015 module is more efficient than other formats and can facilitate the creation of smaller bundle size through tree-shaking technique.
 
-[![NPM package](https://img.shields.io/npm/dw/konva-es.svg?logo=npm&logoColor=fff&label=NPM+package&color=limegreen)](https://www.npmjs.com/package/konva-es)
+<p align="center">
+<a href="https://tbo47.github.io/" ><img src="https://img.shields.io/badge/created_by-tbo47-blue.svg" alt="Created by tbo47"></a>
+<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
+<a href="https://www.npmjs.com/package/konva-es" rel="nofollow"><img src="https://img.shields.io/npm/dw/konva-es.svg" alt="npm"></a>
+</p>
+
 
 `npm i konva-es`
 
