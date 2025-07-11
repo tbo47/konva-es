@@ -1,4 +1,5 @@
 set -e
+# make sur npm install typescript is installed
 rm -rf dist
 mkdir dist
 npm install
@@ -24,3 +25,4 @@ mv $KONVA_ABS_PATH/lib/* $KONVA_ES_ABS_PATH/dist/lib/
 cd dist
 npm publish --dry-run
 cd ..
+# if you want to publish the package, cd dist and npm publish
