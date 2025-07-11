@@ -12,17 +12,15 @@ sed -i '' '30s/://' src/Global.ts
 # https://github.com/konvajs/konva/pull/1828/files
 sed -i '' 's/\]\.isDragging/\]\?.isDragging/g' src/Global.ts
 sed -i '' 's/CommonJS/ESNext/g' tsconfig.json
-npx tsc --removeComments
+tsc --removeComments
 git checkout .
 cd ../konva-es
 cp package.json dist/package.json
 cp README.md dist/README.md
 KONVA_ABS_PATH=$(cd ../konva && pwd)
 KONVA_ES_ABS_PATH=$(pwd)
-mv $KONVA_ABS_PATH/lib/* $KONVA_ES_ABS_PATH/dist
-rm -rf ../es-front/node_modules/konva-es/lib
-mkdir ../es-front/node_modules/konva-es/lib
-cp -r $KONVA_ES_ABS_PATH/dist/* ../es-front/node_modules/konva-es/lib/
+mkdir $KONVA_ES_ABS_PATH/dist/lib
+mv $KONVA_ABS_PATH/lib/* $KONVA_ES_ABS_PATH/dist/lib/
 cd dist
 npm publish --dry-run
 cd ..
