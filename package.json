@@ -1,6 +1,6 @@
 {
   "name": "konva-es",
-  "version": "9.3.22",
+  "version": "10.0.2",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
   "repository": {
@@ -15,7 +15,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "esbuild": "^0.25.6",
-    "typescript": "^5.8.3"
+    "esbuild": "^0.25.10",
+    "typescript": "^5.9.3"
   }
 }
