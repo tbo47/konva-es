@@ -1,6 +1,5 @@
-[konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) at esm format.
+[konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) at esm format before konva made the move to esm format (prior to version 10).
 
-ES2015 module is more efficient than other formats and can facilitate the creation of smaller bundle size through tree-shaking technique.
 
 <p align="center">
 <a href="https://tbo47.github.io/" ><img src="https://img.shields.io/badge/created_by-tbo47-blue.svg" alt="Created by tbo47"></a>
