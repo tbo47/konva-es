@@ -1,9 +1,13 @@
-[konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) at esm format before konva made the move to esm format (prior to version 10).
+[konva-es](https://github.com/tbo47/konva-es/) is [konva](https://github.com/konvajs/konva) published as esm format.
 
+Note: Starting at version 10, konva is also compiled with es2015 format. So konva-es is not super relevant anymore.
+
+2 main differences: 
+- this build is just the typescript konva code source transpiled with `tsc` with the javascript comments. No `rollup` or `gulp`.
+- fixing the `isDragging` issue I could fix otherwise.
 
 <p align="center">
 <a href="https://tbo47.github.io/" ><img src="https://img.shields.io/badge/created_by-tbo47-blue.svg" alt="Created by tbo47"></a>
-<a href="https://opensource.org/licenses/MIT" rel="nofollow"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License"></a>
 <a href="https://www.npmjs.com/package/konva-es" rel="nofollow"><img src="https://img.shields.io/npm/dw/konva-es.svg" alt="npm"></a>
 </p>
 
@@ -26,19 +30,3 @@ import { Rect } from "konva-es/lib/shapes/Rect";
 [Demo](https://tbo47.github.io/konva-esm_example1/) and [code](https://github.com/tbo47/tbo47.github.io/blob/main/konva-esm_example1/index.js).
 
 [Demo 2](https://jsfiddle.net/zd4u7wy6/)
-
-## Test locally
-
-Clone konva: `git clone git@github.com:konvajs/konva.git` (your forked version would be better)
-
-Clone this repo: `git clone git@github.com:tbo47/konva-es.git`
-
-`konva` and `konva-es` need to be in the same folder for the script to work.
-
-`cd konva-es ; ./build-esm.sh`
-
-It transpiles konva to esm format. And does `npm link` for you.
-
-`npm link konva-es` in your project to use it.
-
-Note: tested on macos with nodejs 20

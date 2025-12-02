@@ -11,7 +11,7 @@ sed -i '' '30s/://' src/Global.ts
 # it's strange, sometimes it's not usefull to do the following
 # https://github.com/konvajs/konva/pull/1828/files
 sed -i '' 's/\]\.isDragging/\]\?.isDragging/g' src/Global.ts
-tsc --removeComments
+tsc
 git checkout .
 cd ../konva-es
 cp package.json dist/package.json
